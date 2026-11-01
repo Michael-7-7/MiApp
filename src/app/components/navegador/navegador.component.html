@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>MiApp</ion-title>
+
+    <ion-buttons slot="end">
+      <ion-button (click)="navegar('/inicio')">Inicio</ion-button>
+      <ion-button (click)="navegar('/nosotros')">Nosotros</ion-button>
+      <ion-button (click)="navegar('/servicios')">Servicios</ion-button>
+      <ion-button (click)="navegar('/galeria')">Galería</ion-button>
+      <ion-button (click)="navegar('/contacto')">Contacto</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-button expand="block" (click)="siguientePagina()">
+  Siguiente página →
+</ion-button>
