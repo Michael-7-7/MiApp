@@ -7,6 +7,8 @@ import { IonToolbar } from '@ionic/angular/ion-toolbar';
 import { IonTitle } from '@ionic/angular/ion-title';
 import { IonButtons } from '@ionic/angular/ion-buttons';
 import { IonButton } from '@ionic/angular/ion-button';
+import { IonFooter } from '@ionic/angular/ion-footer';
+import { IonIcon } from '@ionic/angular/ion-icon';
 
 @Component({
   selector: 'app-navegador',
@@ -18,7 +20,9 @@ import { IonButton } from '@ionic/angular/ion-button';
     IonToolbar,
     IonTitle,
     IonButtons,
-    IonButton
+    IonButton,
+    IonFooter,
+IonIcon
   ]
 })
 export class NavegadorComponent {
@@ -53,6 +57,10 @@ export class NavegadorComponent {
       : this.paginas[posicion + 1];
 
     this.router.navigate([siguiente]);
+    
+  }
+    cerrarSesion() {
+    this.router.navigate(['/login']);
   }
   
 

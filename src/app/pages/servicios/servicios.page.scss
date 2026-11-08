@@ -1,0 +1,51 @@
+ion-footer {
+  width: 100%;
+  display: block;
+}
+
+ion-footer ion-toolbar {
+  --min-height: 130px;
+  --padding-start: 0;
+  --padding-end: 0;
+}
+
+.footer-container {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  color: white;
+}
+
+.footer-container p {
+  font-size: 14px;
+  margin: 5px 0 10px;
+}
+
+.redes-sociales {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 10px;
+}
+
+.redes-sociales a {
+  color: white;
+  font-size: 28px;
+  text-decoration: none;
+}
+
+.redes-sociales ion-icon {
+  font-size: 28px;
+}
+
+.footer-container small {
+  font-size: 11px;
+  text-align: center;
+}

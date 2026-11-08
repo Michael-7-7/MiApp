@@ -1,0 +1,26 @@
+<div class="login-container">
+  <div class="login-card">
+    <div class="logo">M</div>
+
+    <h1>Bienvenido a MiApp</h1>
+    <p>Ingresa tus datos para continuar</p>
+
+    <label>Nombre de usuario</label>
+    <input
+      type="text"
+      placeholder="Escribe tu nombre"
+      [(ngModel)]="nombre"
+    >
+
+    <label>Contraseña</label>
+    <input
+      type="password"
+      placeholder="Escribe tu contraseña"
+      [(ngModel)]="contrasena"
+    >
+
+    <button (click)="ingresar()">Ingresar</button>
+
+    <p class="footer-text">¡Qué gusto tenerte aquí!</p>
+  </div>
+</div>
